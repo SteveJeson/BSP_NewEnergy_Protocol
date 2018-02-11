@@ -1,0 +1,17 @@
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\BSP_NewEnergy_Protocol.exe.config
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\BSP_NewEnergy_Protocol.exe
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\BSP_NewEnergy_Protocol.pdb
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\log4net.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\log4net.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\obj\Debug\BSP_NewEnergy_Protocol.exe
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\obj\Debug\BSP_NewEnergy_Protocol.pdb
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.Common.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.Facility.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.SocketBase.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.SocketEngine.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.SocketService.exe
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.WebSocket.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.Common.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.Facility.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.SocketBase.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.SocketEngine.xml

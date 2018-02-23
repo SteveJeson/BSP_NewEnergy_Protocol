@@ -1,0 +1,17 @@
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Test_NewEnergy.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Test_NewEnergy.pdb
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\BSP_NewEnergy_Protocol.exe
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\log4net.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\SuperSocket.SocketBase.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\SuperSocket.Facility.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\SuperSocket.Common.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\BSP_NewEnergy_Protocol.pdb
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\log4net.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\SuperSocket.SocketBase.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\SuperSocket.Facility.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\SuperSocket.Common.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\obj\Debug\Test_NewEnergy.csprojResolveAssemblyReference.cache
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\obj\Debug\Test_NewEnergy.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\obj\Debug\Test_NewEnergy.pdb

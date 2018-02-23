@@ -653,5 +653,18 @@ namespace BSP_NewEnergy_Protocol.Utils
             return a;
         }
 
+        public static byte makeCheckSum(byte[] data)
+        {
+            int dSum = 0;
+            // 遍历十六进制，并计算总和
+            for (int i = 0; i < data.Length; i++)
+            {
+                dSum += data[i];
+            }
+            int mod = dSum % 256; // 用256取余，十六进制最大是FF，FF的十进制是255
+            byte[] checkSumHex = integerTo1Bytes(dSum); // 余数转成十六进制
+            return checkSumHex[0];
+        }
+
     }
 }

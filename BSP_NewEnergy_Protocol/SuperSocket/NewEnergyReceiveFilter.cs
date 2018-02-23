@@ -6,8 +6,8 @@ namespace BSP_NewEnergy_Protocol.SuperSocket
 {
     public class NewEnergyReceiveFilter : BeginEndMarkReceiveFilter<NewEnergyRequestInfo>
     {
-        private readonly static byte[] BeginMark = new byte[] { 0x7e };
-        private readonly static byte[] EndMark = new byte[] { 0x7e };
+        private readonly static byte[] BeginMark = new byte[] { 0x68 };
+        private readonly static byte[] EndMark = new byte[] { 0x16 };
 
         private IAppSession appSession;
         public NewEnergyReceiveFilter(IAppSession session) : base(BeginMark, EndMark)
@@ -24,7 +24,6 @@ namespace BSP_NewEnergy_Protocol.SuperSocket
                 all = all + readBuffer[offset + i].ToString("X2") + " ";
             }
 
-            //解析消息头
             NewEnergyProtocol protocol = new NewEnergyProtocol();
             protocol.all = all;
 

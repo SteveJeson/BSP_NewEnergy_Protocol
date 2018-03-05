@@ -5,6 +5,10 @@ using SuperSocket.SocketBase.Config;
 using BSP_NewEnergy_Protocol.SuperSocket;
 using System.Collections.Concurrent;
 using System.Threading;
+using System.Configuration;
+using FluentScheduler;
+using System.Timers;
+
 namespace BSP_NewEnergy_Protocol
 {
     public class Program
@@ -17,15 +21,20 @@ namespace BSP_NewEnergy_Protocol
 
         private static ServerConfig serverConfig = new ServerConfig();
 
+        private static ConcurrentDictionary<string, NewEnergySession> sessions 
+            = new ConcurrentDictionary<string, NewEnergySession>();
+
+        private static ConcurrentDictionary<string, System.Timers.Timer> timers
+            = new ConcurrentDictionary<string, System.Timers.Timer>();
+
         static void protocolServer_NewSessionConnected(NewEnergySession session)
         {
-            Console.WriteLine(DateTime.Now + " Session:【" + session.RemoteEndPoint + "】connected == Num:"+appServer.SessionCount.ToString());
+            Console.WriteLine("{0} Session:<<{1}>><<{2}>> connected,session count >> {3}", DateTime.Now, session.RemoteEndPoint, session.SessionID, appServer.SessionCount);
         }
-
-        private static ConcurrentDictionary<string, NewEnergySession> sessions = new ConcurrentDictionary<string, NewEnergySession>();
 
         static void protocolServer_NewRequestReceived(NewEnergySession session, NewEnergyRequestInfo requestInfo)
         {
+            bool checkTimeDone = false;
             bool needReply = true;
             byte[] sendMsg = ExplainUtils.HexSpaceStringToByteArray(requestInfo.Body.all);
             String content = BitConverter.ToString(sendMsg).Replace("-", " ");
@@ -79,19 +88,46 @@ namespace BSP_NewEnergy_Protocol
             }
             else if (type == 0x09)//校时
             {
-                Console.WriteLine("<<校时>>");
-                DateTime now = DateTime.Now;
-                string[] timeArr = now.ToString("yy-MM-dd-HH-mm-ss").Split('-');
-                sendMsg[typeIndex + 1] = ExplainUtils.string2Bcd(timeArr[0])[0];
-                sendMsg[typeIndex + 2] = ExplainUtils.string2Bcd(timeArr[1])[0];
-                sendMsg[typeIndex + 3] = ExplainUtils.string2Bcd(timeArr[2])[0];
-                sendMsg[typeIndex + 4] = ExplainUtils.string2Bcd(timeArr[3])[0];
-                sendMsg[typeIndex + 5] = ExplainUtils.string2Bcd(timeArr[4])[0];
-                sendMsg[typeIndex + 6] = ExplainUtils.string2Bcd(timeArr[5])[0];
-                int len = sendMsg.Length - 2 - index;
-                byte[] newArr = new byte[len];
-                Buffer.BlockCopy(sendMsg, index, newArr, 0, len);
-                sendMsg[sendMsg.Length -2] = ExplainUtils.makeCheckSum(newArr);
+                System.Timers.Timer timer = null;
+                if (!timers.ContainsKey(code))
+                {
+                    timer = new System.Timers.Timer();
+
+                } else
+                {
+                    timer = timers[code];
+                }
+                byte controlCode = sendMsg[index+1];
+                if (controlCode == 0xDC)//校时成功
+                {
+                    checkTimeDone = true;
+                    timer.Enabled = false;
+                    timer.Stop();
+                    timers.TryRemove(code,out timer);
+                    Console.WriteLine("<<{0}>><<{1}>>check time done,stopped timer.",code,session.SessionID);
+                }
+                else//校时回复
+                {
+                    SendCheckTimerInfo(sendMsg,session,typeIndex,index);
+                    if (!checkTimeDone)
+                    {
+                        timer.Interval = int.Parse(ConfigurationManager.AppSettings["interval"]);
+                        timer.Enabled = true;
+                        timer.Elapsed += (obj,e)=> {
+                            SendCheckTimerInfo(sendMsg, session, typeIndex, index);
+                        };
+                        timer.Start();
+                        if (!timers.ContainsKey(code))
+                        {
+                            timers.TryAdd(code,timer);
+                        } else
+                        {
+                            timers[code] = timer;
+                        }
+                        Console.WriteLine("<<{0}>> timer started.",code);
+                    }
+                }
+                needReply = false;
             } else if (type == 0x01)//采集频率回复
             {
                 SendFrequencyForCollection();//测试
@@ -108,12 +144,26 @@ namespace BSP_NewEnergy_Protocol
             }else if (type == 0x52)//下发倾角仪回复
             {
                 SendInclinometerMsg();
+                needReply = false;
             } else if (type == 0x53)//取消倾角仪回复
             {
                 //同下发，只是帧类型不同
+                needReply = false;
             } else if (type == 0x39)//倾角仪数据上报
             {
                 ParseInclinometerMsg(sendMsg);
+                needReply = false;
+            } else if (type == 0x15)//倾角数据采集无响应
+            {
+                //68 0A 0A 68 5B 12 12 00 08 15 02 01 01 D4 DC 16
+                //68 0A 0A 68 DB 12 12 00 08 15 02 01 01 D4 5C 16
+                byte controlCode = sendMsg[4];
+                byte[] arr = new byte[] { controlCode, 0x80 };
+                sendMsg[4] = ExplainUtils.makeCheckSum(arr);
+                int len = sendMsg.Length - 2 - index;
+                byte[] newArr = new byte[len];
+                Buffer.BlockCopy(sendMsg, index, newArr, 0, len);
+                sendMsg[14] = ExplainUtils.makeCheckSum(newArr);
             }
             if (needReply)
             {
@@ -121,8 +171,34 @@ namespace BSP_NewEnergy_Protocol
                 session.Logger.Info("reply to client == " + reply);
                 Console.WriteLine("reply to client == {0}", reply);
                 session.Send(sendMsg, 0, sendMsg.Length);//回复客户端
-                Thread.Sleep(5000);
             }
+        }
+
+        /// <summary>
+        /// 主动下发校时消息
+        /// </summary>
+        /// <param name="sendMsg"></param>
+        /// <param name="session"></param>
+        /// <param name="typeIndex"></param>
+        /// <param name="index"></param>
+        private static void SendCheckTimerInfo(byte[] sendMsg, NewEnergySession session,int typeIndex,int index)
+        {
+            DateTime now = DateTime.Now;
+            string[] timeArr = now.ToString("yy-MM-dd-HH-mm-ss").Split('-');
+            sendMsg[typeIndex + 1] = ExplainUtils.string2Bcd(timeArr[0])[0];
+            sendMsg[typeIndex + 2] = ExplainUtils.string2Bcd(timeArr[1])[0];
+            sendMsg[typeIndex + 3] = ExplainUtils.string2Bcd(timeArr[2])[0];
+            sendMsg[typeIndex + 4] = ExplainUtils.string2Bcd(timeArr[3])[0];
+            sendMsg[typeIndex + 5] = ExplainUtils.string2Bcd(timeArr[4])[0];
+            sendMsg[typeIndex + 6] = ExplainUtils.string2Bcd(timeArr[5])[0];
+            int len = sendMsg.Length - 2 - index;
+            byte[] newArr = new byte[len];
+            Buffer.BlockCopy(sendMsg, index, newArr, 0, len);
+            sendMsg[sendMsg.Length - 2] = ExplainUtils.makeCheckSum(newArr);
+            String reply = BitConverter.ToString(sendMsg).Replace("-", " ");
+            session.Logger.Info("reply to client == " + reply);
+            Console.WriteLine("reply to client == {0}", reply);
+            session.Send(sendMsg, 0, sendMsg.Length);//回复客户端
         }
 
         /// <summary>
@@ -381,12 +457,13 @@ namespace BSP_NewEnergy_Protocol
         static void protocolServer_SessionClosed(NewEnergySession session, CloseReason reason)
         {
             logger.Warn("Client【" + session.RemoteEndPoint + "】disconnected == Num：" + appServer.SessionCount.ToString() + ",Reason：" + reason);
+            Console.WriteLine("Client <<{0}>><<{1}>> disconnected,Online session >> {2},Reason:{3}",session.RemoteEndPoint,session.SessionID,appServer.SessionCount,reason);
             session.Close();
         }
         static void Main(string[] args)
         {
-            serverConfig.Ip = "192.168.1.161";
-            serverConfig.Port = 10002;
+            serverConfig.Ip = ConfigurationManager.AppSettings["ip"];
+            serverConfig.Port = int.Parse(ConfigurationManager.AppSettings["port"]);
             serverConfig.MaxConnectionNumber = 65535;
             appServer.Setup(serverConfig);
             //注册连接事件
@@ -404,6 +481,7 @@ namespace BSP_NewEnergy_Protocol
             Console.WriteLine("Server is running，listen on "+serverConfig.Ip+":"+serverConfig.Port+" and max connection number is "+serverConfig.MaxConnectionNumber+".");
             Console.ReadKey();
         }
+
         
     }
 }

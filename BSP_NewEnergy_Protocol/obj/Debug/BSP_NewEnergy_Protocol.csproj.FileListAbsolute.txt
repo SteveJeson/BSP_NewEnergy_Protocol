@@ -15,4 +15,6 @@ D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\S
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.Facility.xml
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.SocketBase.xml
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\SuperSocket.SocketEngine.xml
-D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\obj\Debug\BSP_NewEnergy_Protocol.csprojResolveAssemblyReference.cache
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\FluentScheduler.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\FluentScheduler.pdb
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\FluentScheduler.xml

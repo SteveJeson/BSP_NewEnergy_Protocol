@@ -15,3 +15,4 @@ D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\zh-Hans\M
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\obj\Debug\Test_NewEnergy.csprojResolveAssemblyReference.cache
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\obj\Debug\Test_NewEnergy.dll
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\obj\Debug\Test_NewEnergy.pdb
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Test_NewEnergy.dll.config

@@ -15,5 +15,14 @@ namespace BSP_NewEnergy_Protocol.SuperSocket
         {
             logger.Error("<<"+e.GetType()+">>"+e.Message);
         }
+
+        /// <summary>  
+        /// 连接关闭  
+        /// </summary>  
+        /// <param name="reason"></param>  
+        protected override void OnSessionClosed(CloseReason reason)
+        {
+            base.OnSessionClosed(reason);
+        }
     }
 }

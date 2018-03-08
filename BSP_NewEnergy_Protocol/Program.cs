@@ -288,10 +288,24 @@ namespace BSP_NewEnergy_Protocol
                     {
                         Console.WriteLine("参数不能为空，请重新输入！");
                     }
+                }else if (userCommand.Equals("4"))
+                {
+                    try
+                    {
+                        Console.WriteLine("请输入倾角仪数据：");
+                        string msg = Console.ReadLine();
+                        byte[] result = ExplainUtils.HexSpaceStringToByteArray(msg);
+                        MsgHandler.ParseInclinometerMsg(result);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("出错啦！{0}",e.Message);
+                    }
+                    
                 }
                 else if (userCommand.Equals("help"))
                 {
-                    Console.WriteLine("0：初始化汇集器\r\n"+"1：重启汇集器\r\n"+"2：下发汇集器配置信息\r\n"+"3：设置采集频率\r\n");
+                    Console.WriteLine("0：初始化汇集器\r\n"+"1：重启汇集器\r\n"+"2：下发汇集器配置信息\r\n"+"3：设置采集频率\r\n"+"4：解析倾角仪上报数据");
                 }
                 else
                 {

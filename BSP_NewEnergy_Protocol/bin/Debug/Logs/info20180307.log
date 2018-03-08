@@ -1,0 +1,399 @@
+﻿2018-03-07 11:50:26,686 [10] INFO  NewEnergyServer-10261382 - The server instance NewEnergyServer-10261382 has been started!
+2018-03-07 11:50:39,953 [11] INFO  NewEnergyServer-10261382 - Session: c3136e67-7944-484d-b65b-ac4bc0a922f4/192.168.1.161:57062
+A new session connected!
+2018-03-07 11:50:39,959 [6] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:57062>><<c3136e67-7944-484d-b65b-ac4bc0a922f4>> connected,session count >> 1
+2018-03-07 11:51:02,505 [6] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 11:51:02,507 [6] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 11:51:12,507 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 11 51 12 8F 16
+2018-03-07 11:51:22,518 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 11 51 22 9F 16
+2018-03-07 11:51:32,530 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 11 51 32 AF 16
+2018-03-07 11:53:13,498 [9] INFO  NewEnergyServer-26756241 - The server instance NewEnergyServer-26756241 has been started!
+2018-03-07 11:53:27,582 [1] INFO  NewEnergyServer-49205706 - The server instance NewEnergyServer-49205706 has been started!
+2018-03-07 15:01:54,849 [10] INFO  NewEnergyServer-9343812 - The server instance NewEnergyServer-9343812 has been started!
+2018-03-07 15:02:33,299 [11] INFO  NewEnergyServer-9343812 - Session: db084029-6b68-40ed-8e8f-1d6918d13b3b/192.168.1.161:63403
+A new session connected!
+2018-03-07 15:02:33,303 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:63403>><<db084029-6b68-40ed-8e8f-1d6918d13b3b>> connected,session count >> 1
+2018-03-07 15:02:34,790 [14] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 15:02:34,791 [14] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 15:02:44,801 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 02 44 76 16
+2018-03-07 15:02:54,801 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 02 54 86 16
+2018-03-07 15:03:04,806 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 03 04 37 16
+2018-03-07 15:03:14,813 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 03 14 47 16
+2018-03-07 15:03:24,814 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 03 24 57 16
+2018-03-07 15:03:34,814 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 03 34 67 16
+2018-03-07 15:03:44,827 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 03 44 77 16
+2018-03-07 15:03:54,854 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 03 54 87 16
+2018-03-07 15:04:05,567 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 04 05 39 16
+2018-03-07 15:04:15,572 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 04 15 49 16
+2018-03-07 15:04:25,573 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 04 25 59 16
+2018-03-07 15:04:35,574 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 04 35 69 16
+2018-03-07 15:04:45,575 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 04 45 79 16
+2018-03-07 15:04:55,576 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 04 55 89 16
+2018-03-07 15:05:05,578 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 05 05 3A 16
+2018-03-07 15:05:15,579 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 05 15 4A 16
+2018-03-07 15:05:25,580 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 05 25 5A 16
+2018-03-07 15:05:35,581 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 05 35 6A 16
+2018-03-07 15:05:55,067 [10] INFO  NewEnergyServer-10261382 - The server instance NewEnergyServer-10261382 has been started!
+2018-03-07 15:06:53,071 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 15:07:00,658 [10] INFO  NewEnergyServer-31884011 - Session: 922a8c0d-942e-4f30-8897-294090661b3c/192.168.1.161:63721
+A new session connected!
+2018-03-07 15:07:00,670 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:63721>><<922a8c0d-942e-4f30-8897-294090661b3c>> connected,session count >> 1
+2018-03-07 15:07:01,642 [15] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 15:07:01,645 [15] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 15:07:11,645 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 07 11 48 16
+2018-03-07 15:07:21,655 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 07 21 58 16
+2018-03-07 15:07:31,661 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 07 31 68 16
+2018-03-07 15:07:41,655 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 07 41 00 16
+2018-03-07 15:07:51,655 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 07 51 88 16
+2018-03-07 15:08:01,657 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 08 01 39 16
+2018-03-07 15:08:11,672 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 08 11 49 16
+2018-03-07 15:08:21,672 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 15 08 21 59 16
+2018-03-07 15:57:18,285 [10] INFO  NewEnergyServer-10261382 - The server instance NewEnergyServer-10261382 has been started!
+2018-03-07 15:59:12,989 [10] INFO  NewEnergyServer-10261382 - The server instance NewEnergyServer-10261382 has been started!
+2018-03-07 16:10:06,379 [10] INFO  NewEnergyServer-9343812 - The server instance NewEnergyServer-9343812 has been started!
+2018-03-07 16:14:46,494 [8] INFO  NewEnergyServer-14556615 - The server instance NewEnergyServer-14556615 has been started!
+2018-03-07 16:21:17,607 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 16:24:58,113 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 16:26:15,510 [8] INFO  NewEnergyServer-14556615 - The server instance NewEnergyServer-14556615 has been started!
+2018-03-07 16:26:33,321 [9] INFO  NewEnergyServer-14556615 - Session: d1a2f848-ad83-47d4-9d50-c3d086d45d75/192.168.1.161:6208
+A new session connected!
+2018-03-07 16:26:33,347 [12] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:6208>><<d1a2f848-ad83-47d4-9d50-c3d086d45d75>> connected,session count >> 1
+2018-03-07 16:26:37,925 [12] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 16:26:37,928 [12] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 16:26:47,930 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 26 47 9E 16
+2018-03-07 16:26:57,941 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 26 57 AE 16
+2018-03-07 16:27:07,953 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 27 07 5F 16
+2018-03-07 16:27:17,955 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 27 17 6F 16
+2018-03-07 16:27:27,969 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 27 27 7F 16
+2018-03-07 16:27:37,996 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 27 37 8F 16
+2018-03-07 16:27:48,000 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 27 48 A0 16
+2018-03-07 16:27:58,002 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 27 58 B0 16
+2018-03-07 16:28:08,016 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 28 08 61 16
+2018-03-07 16:28:18,032 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 28 18 71 16
+2018-03-07 16:28:28,032 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 28 28 81 16
+2018-03-07 16:28:38,033 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 28 38 91 16
+2018-03-07 16:28:48,035 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 28 48 A1 16
+2018-03-07 16:28:58,046 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 28 58 B1 16
+2018-03-07 16:29:08,046 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 29 08 62 16
+2018-03-07 16:29:18,063 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 29 18 72 16
+2018-03-07 16:29:23,472 [12] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 16:29:23,475 [12] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 16:29:28,063 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 29 28 82 16
+2018-03-07 16:29:33,471 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 29 33 8D 16
+2018-03-07 16:29:38,067 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 29 38 92 16
+2018-03-07 16:29:43,472 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 29 43 9D 16
+2018-03-07 16:29:48,077 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 29 48 A2 16
+2018-03-07 16:30:45,884 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 16:31:21,586 [10] INFO  NewEnergyServer-31884011 - Session: a40a5fa5-f5a8-4c59-bfba-53aa0daf1e4d/192.168.1.161:6458
+A new session connected!
+2018-03-07 16:31:21,605 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:6458>><<a40a5fa5-f5a8-4c59-bfba-53aa0daf1e4d>> connected,session count >> 1
+2018-03-07 16:31:31,038 [15] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 16:31:31,040 [15] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 16:40:12,630 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 16:40:21,892 [10] INFO  NewEnergyServer-31884011 - Session: 64a87ca7-d04b-460b-8c15-9d29a4954284/192.168.1.161:7055
+A new session connected!
+2018-03-07 16:40:21,915 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:7055>><<64a87ca7-d04b-460b-8c15-9d29a4954284>> connected,session count >> 1
+2018-03-07 16:40:25,545 [13] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 16:40:25,547 [13] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 16:40:35,550 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 40 35 A6 16
+2018-03-07 16:40:45,561 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 40 45 B6 16
+2018-03-07 16:40:55,561 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 40 55 C6 16
+2018-03-07 16:41:05,565 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 41 05 77 16
+2018-03-07 16:41:15,565 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 41 15 87 16
+2018-03-07 16:41:25,565 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 41 25 97 16
+2018-03-07 16:41:35,577 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 41 35 A7 16
+2018-03-07 16:41:45,577 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 41 45 B7 16
+2018-03-07 16:41:55,578 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 41 55 C7 16
+2018-03-07 16:42:05,578 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 42 05 78 16
+2018-03-07 16:42:15,577 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 42 15 88 16
+2018-03-07 16:42:25,580 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 42 25 98 16
+2018-03-07 16:42:35,581 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 42 35 A8 16
+2018-03-07 16:42:45,581 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 42 45 B8 16
+2018-03-07 16:42:55,581 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 42 55 C8 16
+2018-03-07 16:43:05,582 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 43 05 79 16
+2018-03-07 16:43:15,584 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 43 15 89 16
+2018-03-07 16:43:25,586 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 43 25 99 16
+2018-03-07 16:43:35,587 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 43 35 A9 16
+2018-03-07 16:43:45,599 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 43 45 B9 16
+2018-03-07 16:43:55,610 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 43 55 C9 16
+2018-03-07 16:44:05,610 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 44 05 7A 16
+2018-03-07 16:44:15,610 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 44 15 8A 16
+2018-03-07 16:44:25,625 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 44 25 9A 16
+2018-03-07 16:44:35,625 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 44 35 AA 16
+2018-03-07 16:44:45,627 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 44 45 BA 16
+2018-03-07 16:44:55,629 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 44 55 CA 16
+2018-03-07 16:45:05,639 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 45 05 7B 16
+2018-03-07 16:45:15,641 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 45 15 8B 16
+2018-03-07 16:45:25,643 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 45 25 9B 16
+2018-03-07 16:45:35,643 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 45 35 AB 16
+2018-03-07 16:45:45,644 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 45 45 BB 16
+2018-03-07 16:45:55,659 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 45 55 CB 16
+2018-03-07 16:46:05,661 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 46 05 7C 16
+2018-03-07 16:46:15,661 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 46 15 8C 16
+2018-03-07 16:46:25,671 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 46 25 9C 16
+2018-03-07 16:46:35,673 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 46 35 AC 16
+2018-03-07 16:46:45,675 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 46 45 BC 16
+2018-03-07 16:46:55,675 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 46 55 CC 16
+2018-03-07 16:47:18,881 [10] INFO  NewEnergyServer-10261382 - The server instance NewEnergyServer-10261382 has been started!
+2018-03-07 16:49:53,690 [8] INFO  NewEnergyServer-14556615 - The server instance NewEnergyServer-14556615 has been started!
+2018-03-07 16:49:56,210 [9] INFO  NewEnergyServer-14556615 - Session: a4eb7001-8ef0-4a7b-a973-7e1c6aa0e11a/192.168.1.161:7763
+A new session connected!
+2018-03-07 16:49:56,245 [12] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:7763>><<a4eb7001-8ef0-4a7b-a973-7e1c6aa0e11a>> connected,session count >> 1
+2018-03-07 16:49:57,019 [13] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 16:49:57,021 [13] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 16:50:07,031 [15] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 50 07 88 16
+2018-03-07 16:50:17,031 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 50 17 98 16
+2018-03-07 16:50:27,045 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 50 27 A8 16
+2018-03-07 16:50:37,047 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 50 37 B8 16
+2018-03-07 16:51:08,474 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 51 08 8A 16
+2018-03-07 16:51:18,481 [12] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 51 18 9A 16
+2018-03-07 16:51:39,983 [10] INFO  NewEnergyServer-10261382 - The server instance NewEnergyServer-10261382 has been started!
+2018-03-07 16:51:54,758 [11] INFO  NewEnergyServer-10261382 - Session: 8ea58bbd-bf5a-49bd-9a62-300f121cc3d8/192.168.1.161:7908
+A new session connected!
+2018-03-07 16:51:54,781 [7] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:7908>><<8ea58bbd-bf5a-49bd-9a62-300f121cc3d8>> connected,session count >> 1
+2018-03-07 16:51:57,822 [7] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 16:51:57,823 [7] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 16:52:07,826 [7] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 52 07 8A 16
+2018-03-07 16:52:17,830 [7] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 52 17 9A 16
+2018-03-07 16:52:27,831 [7] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 52 27 AA 16
+2018-03-07 16:52:37,833 [7] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 52 37 BA 16
+2018-03-07 16:52:47,840 [7] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 52 47 CA 16
+2018-03-07 16:52:57,853 [7] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 52 57 DA 16
+2018-03-07 16:57:51,830 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 16:57:53,975 [10] INFO  NewEnergyServer-31884011 - Session: f73d92bf-81bd-4033-8e02-83115588823a/192.168.1.161:8298
+A new session connected!
+2018-03-07 16:57:54,004 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:8298>><<f73d92bf-81bd-4033-8e02-83115588823a>> connected,session count >> 1
+2018-03-07 16:57:54,836 [13] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 16:57:54,839 [13] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 16:58:04,838 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 58 04 8D 16
+2018-03-07 16:58:14,842 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 58 14 9D 16
+2018-03-07 16:58:24,844 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 58 24 AD 16
+2018-03-07 16:58:34,844 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 58 34 BD 16
+2018-03-07 16:58:44,858 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 58 44 CD 16
+2018-03-07 16:58:54,859 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 58 54 DD 16
+2018-03-07 16:59:04,864 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 59 04 8E 16
+2018-03-07 16:59:14,874 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 59 14 9E 16
+2018-03-07 16:59:24,892 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 59 24 AE 16
+2018-03-07 16:59:34,904 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 59 34 BE 16
+2018-03-07 16:59:44,904 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 59 44 CE 16
+2018-03-07 16:59:54,905 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 16 59 54 DE 16
+2018-03-07 17:00:04,905 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 00 04 36 16
+2018-03-07 17:00:14,922 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 00 14 46 16
+2018-03-07 17:00:24,922 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 00 24 56 16
+2018-03-07 17:00:34,936 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 00 34 66 16
+2018-03-07 17:00:44,937 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 00 44 76 16
+2018-03-07 17:00:54,940 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 00 54 86 16
+2018-03-07 17:01:04,958 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 01 04 37 16
+2018-03-07 17:01:14,972 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 01 14 47 16
+2018-03-07 17:01:24,972 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 01 24 57 16
+2018-03-07 17:01:34,988 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 01 34 67 16
+2018-03-07 17:01:44,991 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 01 44 77 16
+2018-03-07 17:01:55,013 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 01 55 88 16
+2018-03-07 17:02:05,016 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 02 05 39 16
+2018-03-07 17:02:15,041 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 02 15 49 16
+2018-03-07 17:02:25,047 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 02 25 59 16
+2018-03-07 17:02:35,065 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 02 35 69 16
+2018-03-07 17:02:45,068 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 02 45 79 16
+2018-03-07 17:02:55,077 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 02 55 89 16
+2018-03-07 17:03:05,093 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 03 05 3A 16
+2018-03-07 17:03:15,134 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 03 15 4A 16
+2018-03-07 17:03:25,147 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 03 25 5A 16
+2018-03-07 17:03:35,159 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 03 35 6A 16
+2018-03-07 17:03:45,177 [20] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 03 45 7A 16
+2018-03-07 17:05:02,504 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 17:05:06,416 [10] INFO  NewEnergyServer-31884011 - Session: afbcd7be-3e3b-4277-8db2-b0da1659862c/192.168.1.161:8563
+A new session connected!
+2018-03-07 17:05:06,452 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:8563>><<afbcd7be-3e3b-4277-8db2-b0da1659862c>> connected,session count >> 1
+2018-03-07 17:05:07,517 [13] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
+2018-03-07 17:05:07,518 [13] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 08 00 00 00 70 00 00 01 00 9D 16
+2018-03-07 17:05:17,523 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 05 17 4E 16
+2018-03-07 17:05:27,529 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 05 27 5E 16
+2018-03-07 17:05:37,538 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 05 37 6E 16
+2018-03-07 17:05:47,546 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 05 47 7E 16
+2018-03-07 17:05:57,546 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 05 57 8E 16
+2018-03-07 17:06:07,547 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 06 07 3F 16
+2018-03-07 17:06:17,547 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 06 17 4F 16
+2018-03-07 17:06:27,554 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 06 27 5F 16
+2018-03-07 17:06:37,563 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 06 37 6F 16
+2018-03-07 17:06:47,563 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 06 47 7F 16
+2018-03-07 17:06:57,565 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 06 57 8F 16
+2018-03-07 17:07:07,579 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 07 07 40 16
+2018-03-07 17:07:17,579 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 07 17 50 16
+2018-03-07 17:07:27,580 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 07 27 60 16
+2018-03-07 17:07:37,595 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 07 37 70 16
+2018-03-07 17:07:47,610 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 07 47 80 16
+2018-03-07 17:07:57,610 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 07 57 90 16
+2018-03-07 17:08:07,611 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 08 07 41 16
+2018-03-07 17:08:17,612 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 08 17 51 16
+2018-03-07 17:08:27,614 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 08 27 61 16
+2018-03-07 17:08:37,626 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 08 37 71 16
+2018-03-07 17:08:47,639 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 08 47 81 16
+2018-03-07 17:08:57,640 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 08 57 91 16
+2018-03-07 17:09:07,641 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 09 07 42 16
+2018-03-07 17:09:17,642 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 09 17 52 16
+2018-03-07 17:09:24,827 [15] INFO  NewEnergyServer-31884011 - Session: a3523bb9-9c5e-4528-bae4-ee576b178ef9/192.168.1.161:8645
+A new session connected!
+2018-03-07 17:09:24,834 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:8645>><<a3523bb9-9c5e-4528-bae4-ee576b178ef9>> connected,session count >> 2
+2018-03-07 17:09:27,647 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 09 27 62 16
+2018-03-07 17:09:37,654 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 09 37 72 16
+2018-03-07 17:09:47,655 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 09 47 82 16
+2018-03-07 17:09:52,368 [13] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 07 00 00 02 70 00 00 01 00 68 16
+2018-03-07 17:09:52,370 [13] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 07 00 00 00 70 00 00 01 00 9C 16
+2018-03-07 17:09:57,656 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 09 57 92 16
+2018-03-07 17:10:02,376 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 10 02 43 16
+2018-03-07 17:10:07,656 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 10 07 49 16
+2018-03-07 17:10:12,389 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 10 12 53 16
+2018-03-07 17:10:17,696 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 10 17 59 16
+2018-03-07 17:10:22,390 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 10 22 63 16
+2018-03-07 17:10:27,705 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 10 27 69 16
+2018-03-07 17:10:32,390 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 10 32 73 16
+2018-03-07 17:10:37,720 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 10 37 79 16
+2018-03-07 17:10:42,406 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 10 42 83 16
+2018-03-07 17:10:47,735 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 10 47 89 16
+2018-03-07 17:10:52,406 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 10 52 93 16
+2018-03-07 17:10:57,735 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 10 57 99 16
+2018-03-07 17:11:02,407 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 11 02 44 16
+2018-03-07 17:11:07,751 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 11 07 4A 16
+2018-03-07 17:11:12,421 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 11 12 54 16
+2018-03-07 17:11:17,764 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 11 17 5A 16
+2018-03-07 17:11:22,424 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 11 22 64 16
+2018-03-07 17:11:27,766 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 11 27 6A 16
+2018-03-07 17:11:32,436 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 11 32 74 16
+2018-03-07 17:11:37,782 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 11 37 7A 16
+2018-03-07 17:11:42,452 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 11 42 84 16
+2018-03-07 17:11:47,797 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 11 47 8A 16
+2018-03-07 17:11:52,452 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 11 52 94 16
+2018-03-07 17:11:57,799 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 08 09 18 03 07 17 11 57 9A 16
+2018-03-07 17:14:50,391 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 17:16:40,777 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 17:22:26,063 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 17:22:30,949 [10] INFO  NewEnergyServer-31884011 - Session: f5b3931a-d020-4e70-a334-79bc749fb461/192.168.1.161:9611
+A new session connected!
+2018-03-07 17:22:30,958 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:9611>><<f5b3931a-d020-4e70-a334-79bc749fb461>> connected,session count >> 1
+2018-03-07 17:22:31,669 [13] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 07 00 00 02 70 00 00 01 00 68 16
+2018-03-07 17:22:31,671 [13] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 07 00 00 00 70 00 00 01 00 9C 16
+2018-03-07 17:22:41,672 [14] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 22 41 94 16
+2018-03-07 17:22:51,677 [14] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 22 51 A4 16
+2018-03-07 17:23:01,699 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 23 01 55 16
+2018-03-07 17:23:11,706 [14] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 23 11 65 16
+2018-03-07 17:23:21,706 [14] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 23 21 75 16
+2018-03-07 17:23:31,707 [14] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 23 31 85 16
+2018-03-07 17:24:06,279 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-07 17:24:09,840 [10] INFO  NewEnergyServer-31884011 - Session: 28a114e3-15cd-4875-99f0-6b293614d227/192.168.1.161:9751
+A new session connected!
+2018-03-07 17:24:09,843 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:9751>><<28a114e3-15cd-4875-99f0-6b293614d227>> connected,session count >> 1
+2018-03-07 17:24:10,988 [13] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 07 00 00 02 70 00 00 01 00 68 16
+2018-03-07 17:24:10,989 [13] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 07 00 00 00 70 00 00 01 00 9C 16
+2018-03-07 17:24:20,991 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 24 20 75 16
+2018-03-07 17:24:31,033 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 24 31 86 16
+2018-03-07 17:24:41,046 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 24 41 96 16
+2018-03-07 17:25:09,596 [10] INFO  NewEnergyServer-10261382 - The server instance NewEnergyServer-10261382 has been started!
+2018-03-07 17:25:11,451 [11] INFO  NewEnergyServer-10261382 - Session: 58a37ffb-c017-402d-979c-f8f0ad502f3b/192.168.1.161:9890
+A new session connected!
+2018-03-07 17:25:11,453 [6] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:9890>><<58a37ffb-c017-402d-979c-f8f0ad502f3b>> connected,session count >> 1
+2018-03-07 17:25:12,282 [6] INFO  BSP_NewEnergy_Protocol.Program - Received：68 31 00 31 00 68 C9 12 12 07 00 00 02 70 00 00 01 00 68 16
+2018-03-07 17:25:12,286 [6] INFO  BSP_NewEnergy_Protocol.Program - 登录帧下行: 68 31 00 31 00 68 00 12 12 07 00 00 00 70 00 00 01 00 9C 16
+2018-03-07 17:25:22,303 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 25 22 78 16
+2018-03-07 17:25:32,301 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 25 32 88 16
+2018-03-07 17:25:42,312 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 25 42 98 16
+2018-03-07 17:25:52,326 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 25 52 A8 16
+2018-03-07 17:26:02,326 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 26 02 59 16
+2018-03-07 17:26:12,326 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 26 12 69 16
+2018-03-07 17:26:22,328 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 26 22 79 16
+2018-03-07 17:26:32,344 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 26 32 89 16
+2018-03-07 17:26:42,344 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 26 42 99 16
+2018-03-07 17:26:52,389 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 26 52 A9 16
+2018-03-07 17:27:02,390 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 27 02 5A 16
+2018-03-07 17:27:12,412 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 27 12 6A 16
+2018-03-07 17:27:22,420 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 27 22 7A 16
+2018-03-07 17:27:32,421 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 27 32 8A 16
+2018-03-07 17:27:42,422 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 27 42 9A 16
+2018-03-07 17:27:52,423 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 27 52 AA 16
+2018-03-07 17:28:02,428 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 28 02 5B 16
+2018-03-07 17:28:12,428 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 28 12 6B 16
+2018-03-07 17:28:22,430 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 28 22 7B 16
+2018-03-07 17:28:32,430 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 28 32 8B 16
+2018-03-07 17:28:42,431 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 28 42 9B 16
+2018-03-07 17:28:52,442 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 28 52 AB 16
+2018-03-07 17:29:02,451 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 29 02 5C 16
+2018-03-07 17:29:12,461 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 29 12 6C 16
+2018-03-07 17:29:22,474 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 29 22 7C 16
+2018-03-07 17:29:32,474 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 29 32 8C 16
+2018-03-07 17:29:42,476 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 29 42 9C 16
+2018-03-07 17:29:52,488 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 29 52 AC 16
+2018-03-07 17:30:02,498 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 30 02 63 16
+2018-03-07 17:30:12,501 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 30 12 73 16
+2018-03-07 17:30:22,513 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 30 22 83 16
+2018-03-07 17:30:32,514 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 30 32 93 16
+2018-03-07 17:30:42,515 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 30 42 A3 16
+2018-03-07 17:30:52,517 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 30 52 B3 16
+2018-03-07 17:31:02,530 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 31 02 64 16
+2018-03-07 17:31:12,530 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 31 12 74 16
+2018-03-07 17:31:22,546 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 31 22 84 16
+2018-03-07 17:31:32,549 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 31 32 94 16
+2018-03-07 17:31:42,550 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 31 42 A4 16
+2018-03-07 17:31:52,552 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 31 52 B4 16
+2018-03-07 17:32:02,564 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 32 02 65 16
+2018-03-07 17:32:12,577 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 32 12 75 16
+2018-03-07 17:32:22,581 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 32 22 85 16
+2018-03-07 17:32:32,581 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 32 32 95 16
+2018-03-07 17:32:42,595 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 32 42 A5 16
+2018-03-07 17:32:52,602 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 32 52 B5 16
+2018-03-07 17:33:02,609 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 33 02 66 16
+2018-03-07 17:33:12,610 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 33 12 76 16
+2018-03-07 17:33:22,612 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 33 22 86 16
+2018-03-07 17:33:32,612 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 33 32 96 16
+2018-03-07 17:33:42,625 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 33 42 A6 16
+2018-03-07 17:33:52,631 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 33 52 B6 16
+2018-03-07 17:34:02,644 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 34 02 67 16
+2018-03-07 17:34:12,712 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 34 12 77 16
+2018-03-07 17:34:22,723 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 34 22 87 16
+2018-03-07 17:34:32,723 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 34 32 97 16
+2018-03-07 17:34:42,725 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 34 42 A7 16
+2018-03-07 17:34:52,737 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 34 52 B7 16
+2018-03-07 17:35:02,753 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 35 02 68 16
+2018-03-07 17:35:12,763 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 35 12 00 16
+2018-03-07 17:35:22,765 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 35 22 88 16
+2018-03-07 17:35:32,766 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 35 32 98 16
+2018-03-07 17:35:42,766 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 35 42 A8 16
+2018-03-07 17:35:52,778 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 35 52 B8 16
+2018-03-07 17:36:02,784 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 36 02 69 16
+2018-03-07 17:36:12,795 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 36 12 79 16
+2018-03-07 17:36:22,797 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 36 22 89 16
+2018-03-07 17:36:32,797 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 36 32 99 16
+2018-03-07 17:36:42,799 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 36 42 A9 16
+2018-03-07 17:36:52,808 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 36 52 B9 16
+2018-03-07 17:37:02,850 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 37 02 6A 16
+2018-03-07 17:37:12,858 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 37 12 7A 16
+2018-03-07 17:37:22,859 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 37 22 8A 16
+2018-03-07 17:37:32,860 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 37 32 9A 16
+2018-03-07 17:37:42,861 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 37 42 AA 16
+2018-03-07 17:37:53,353 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 37 53 BB 16
+2018-03-07 17:38:03,367 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 38 03 6C 16
+2018-03-07 17:38:13,379 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 38 13 7C 16
+2018-03-07 17:38:23,387 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 38 23 8C 16
+2018-03-07 17:38:33,401 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 38 33 9C 16
+2018-03-07 17:38:43,427 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 38 43 AC 16
+2018-03-07 17:38:53,440 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 38 53 BC 16
+2018-03-07 17:39:03,440 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 39 03 6D 16
+2018-03-07 17:39:13,441 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 39 13 7D 16
+2018-03-07 17:39:23,442 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 39 23 8D 16
+2018-03-07 17:39:33,454 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 39 33 9D 16
+2018-03-07 17:39:43,471 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 39 43 AD 16
+2018-03-07 17:39:53,482 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 39 53 BD 16
+2018-03-07 17:40:03,490 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 40 03 74 16
+2018-03-07 17:40:13,498 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 40 13 84 16
+2018-03-07 17:40:23,500 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 40 23 94 16
+2018-03-07 17:40:33,499 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 40 33 A4 16
+2018-03-07 17:40:43,517 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 40 43 B4 16
+2018-03-07 17:40:53,541 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 40 53 C4 16
+2018-03-07 17:41:04,160 [39] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 41 04 76 16
+2018-03-07 17:41:14,161 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 41 14 86 16
+2018-03-07 17:41:24,174 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 41 24 96 16
+2018-03-07 17:41:34,176 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 41 34 A6 16
+2018-03-07 17:41:44,178 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 41 44 B6 16
+2018-03-07 17:41:54,187 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 41 54 C6 16
+2018-03-07 17:42:04,197 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 42 04 77 16
+2018-03-07 17:42:14,217 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 42 14 87 16
+2018-03-07 17:42:24,221 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 42 24 97 16
+2018-03-07 17:42:34,222 [6] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - 定时任务 >> 主动下发校时：68 0C 0C 68 5C 12 12 00 07 09 18 03 07 17 42 34 A7 16

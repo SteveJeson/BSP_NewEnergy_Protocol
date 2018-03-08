@@ -151,8 +151,8 @@ namespace BSP_NewEnergy_Protocol.Utils
                 sessions[code].Send(msg, 0, msg.Length);
             } else
             {
-                Console.WriteLine("会话不存在！");
-                logger.Error("会话不存在！");
+                Console.WriteLine("<<{0}>>会话不存在",code);
+                logger.Error("<<"+code+">>会话不存在！");
             }
         }
 
@@ -189,8 +189,8 @@ namespace BSP_NewEnergy_Protocol.Utils
                 sessions[code].Send(msg, 0, msg.Length);
             } else
             {
-                Console.WriteLine("会话不存在！");
-                logger.Error("会话不存在！");
+                Console.WriteLine("<<{0}>>会话不存在", code);
+                logger.Error("<<" + code + ">>会话不存在！");
             }
         }
 
@@ -226,8 +226,8 @@ namespace BSP_NewEnergy_Protocol.Utils
                 sessions[code].Send(msg, 0, msg.Length);
             } else
             {
-                Console.WriteLine("会话不存在！");
-                logger.Error("会话不存在！");
+                Console.WriteLine("<<{0}>>会话不存在", code);
+                logger.Error("<<" + code + ">>会话不存在！");
             }
         }
 
@@ -270,8 +270,8 @@ namespace BSP_NewEnergy_Protocol.Utils
                 sessions[code].Send(msg, 0, msg.Length);
             } else
             {
-                Console.WriteLine("会话不存在！");
-                logger.Error("会话不存在！");
+                Console.WriteLine("<<{0}>>会话不存在", code);
+                logger.Error("<<" + code + ">>会话不存在！");
             }
 
         }
@@ -311,8 +311,18 @@ namespace BSP_NewEnergy_Protocol.Utils
             if (sessions.ContainsKey(code))
             {
                 String sendMsg = BitConverter.ToString(msg).Replace("-", " ");
-                Console.WriteLine("下发倾角仪指令：" + sendMsg);
+                if ("52".Equals(type))
+                {
+                    Console.WriteLine("下发倾角仪指令：" + sendMsg);
+                } else if ("53".Equals(type))
+                {
+                    Console.WriteLine("取消倾角仪指令：" + sendMsg);
+                }
                 sessions[code].Send(msg, 0, msg.Length);
+            }
+            {
+                Console.WriteLine("<<{0}>>会话不存在", code);
+                logger.Error("<<" + code + ">>会话不存在！");
             }
         }
 
@@ -326,15 +336,19 @@ namespace BSP_NewEnergy_Protocol.Utils
             string serialPort = msg[10].ToString("X2");
             string address = msg[11].ToString("X2") + msg[12].ToString("X2");
             string producer = msg[13].ToString("X2");
-            byte[] newArr = new byte[] { msg[17], msg[16], msg[15], msg[14] };
-            int x = ExplainUtils.ParseIntFromBytes(newArr, 0, newArr.Length);//x坐标
-            newArr[0] = msg[21];
-            newArr[1] = msg[20];
-            newArr[2] = msg[19];
-            newArr[3] = msg[18];
-            int y = ExplainUtils.ParseIntFromBytes(newArr, 0, newArr.Length);//y坐标
-            int time = ExplainUtils.ParseIntFromBytes(msg, 22, 6);//时标
+            byte[] newArr = new byte[] { msg[14], msg[15], msg[16], msg[17] };
+            float x = BitConverter.ToSingle(newArr,0);
+            newArr[0] = msg[18];
+            newArr[1] = msg[19];
+            newArr[2] = msg[20];
+            newArr[3] = msg[21];
+            float y = BitConverter.ToSingle(newArr,0);
+            string time = ExplainUtils.oneByteToInteger(msg[22]).ToString().PadLeft(2,'0') + ExplainUtils.oneByteToInteger(msg[23]).ToString().PadLeft(2, '0')
+                + ExplainUtils.oneByteToInteger(msg[24]).ToString().PadLeft(2, '0') + ExplainUtils.oneByteToInteger(msg[25]).ToString().PadLeft(2, '0')
+                + ExplainUtils.oneByteToInteger(msg[26]).ToString().PadLeft(2, '0') + ExplainUtils.oneByteToInteger(msg[27]).ToString().PadLeft(2, '0');//时标
+
             Console.WriteLine("地址码：{0}，串口号：{1}，采集地址：{2}，厂家：{3}，x坐标：{4}，y坐标：{5}，时标：{6}", code, serialPort, address, producer, x, y, time);
+            logger.Info("解析倾角仪上报数据 >> 地址码："+code+"，串口号："+serialPort+"，采集地址："+address+"，厂家："+producer+"，x坐标："+x+"，y坐标："+y+"，时标："+time);
         }
         /// <summary>
         /// 解析采集频率时间

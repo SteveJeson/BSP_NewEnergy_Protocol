@@ -13,11 +13,11 @@ namespace BSP_NewEnergy_Protocol
         public void Configuration(IAppBuilder appBuilder)
         {
             HttpConfiguration config = new HttpConfiguration();
-            config.MapHttpAttributeRoutes();
+            config.MapHttpAttributeRoutes();//有此配置，则可以按路由名称匹配controller方法
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{action}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new { id = RouteParameter.Optional}
             );
             appBuilder.UseWebApi(config);
         }

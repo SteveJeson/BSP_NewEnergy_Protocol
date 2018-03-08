@@ -7,10 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSP_NewEnergy_Protocol", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_NewEnergy", "Test_NewEnergy\Test_NewEnergy.csproj", "{6FAFC428-8755-45E9-A5BE-58F0C55C12C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{E1D50F5E-129E-4F59-BB40-6A1471C6E36D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsp_NewEnergy_Webapp", "Bsp_NewEnergy_Webapp\Bsp_NewEnergy_Webapp.csproj", "{28BE2FC0-68DE-4D5A-B18B-9C2091E61466}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,14 +21,6 @@ Global
 		{6FAFC428-8755-45E9-A5BE-58F0C55C12C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FAFC428-8755-45E9-A5BE-58F0C55C12C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FAFC428-8755-45E9-A5BE-58F0C55C12C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E1D50F5E-129E-4F59-BB40-6A1471C6E36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1D50F5E-129E-4F59-BB40-6A1471C6E36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1D50F5E-129E-4F59-BB40-6A1471C6E36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1D50F5E-129E-4F59-BB40-6A1471C6E36D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28BE2FC0-68DE-4D5A-B18B-9C2091E61466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28BE2FC0-68DE-4D5A-B18B-9C2091E61466}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28BE2FC0-68DE-4D5A-B18B-9C2091E61466}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28BE2FC0-68DE-4D5A-B18B-9C2091E61466}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

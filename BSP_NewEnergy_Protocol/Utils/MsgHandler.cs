@@ -354,7 +354,8 @@ namespace BSP_NewEnergy_Protocol.Utils
             }
             catch (Exception e)
             {
-                logger.Error("<<Method-ParseInclinometerMsg>>"+e.GetType()+":"+e.Message);
+                String content = BitConverter.ToString(msg).Replace("-", " ");
+                logger.Error("<<Method-ParseInclinometerMsg>>"+e.Message+"Data:"+content);
             }
             
         }

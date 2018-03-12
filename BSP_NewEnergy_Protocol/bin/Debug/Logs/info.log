@@ -88,3 +88,24 @@ This session was closed for ServerClosing!
 A new session connected!
 2018-03-12 14:50:31,828 [12] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:28526>><<4f1efe11-629f-4f24-bfa6-f4ee95314a3b>> connected,session count >> 1
 2018-03-12 14:50:33,183 [12] INFO  BSP_NewEnergy_Protocol.Program - <<192.168.1.161:28526>>Received：68 17 17 68 5C 12 12 00 08 28 7A E0 91 2A 58 1B 12 12 00 09 7A E0 91 2A 11 27 03 1D 16
+2018-03-12 15:07:01,084 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-12 15:07:56,093 [10] INFO  NewEnergyServer-31884011 - Session: 2b793100-6649-4c00-835b-a4a7062999e6/192.168.1.161:29362
+A new session connected!
+2018-03-12 15:07:56,106 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:29362>><<2b793100-6649-4c00-835b-a4a7062999e6>> connected,session count >> 1
+2018-03-12 15:08:16,560 [13] INFO  BSP_NewEnergy_Protocol.Program - <<192.168.1.161:29362>>Received：68 18 18 68 5A 12 12 00 08 39 01 00 08 01 3F 35 7E BF A8 C6 0B 3F 12 03 09 04 09 04 C9 16
+2018-03-12 15:08:16,561 [13] INFO  BSP_NewEnergy_Protocol.Utils.MsgHandler - parse inclinometer data >> code：12120008，serialPort：01，address：0008，producer：01，X：-0.993，Y：0.546，timestamp：180309040904
+2018-03-12 15:08:44,105 [13] INFO  BSP_NewEnergy_Protocol.Program - <<192.168.1.161:29362>>Received：68 18 18 68 5A 12 12 00 08 39 01 00 08 01 52 B8 7E BF 66 66 06 3F 12 03 08 13 16
+2018-03-12 15:08:44,108 [13] INFO  NewEnergyServer-31884011 - Session: 2b793100-6649-4c00-835b-a4a7062999e6/192.168.1.161:29362
+This session was closed for ServerClosing!
+2018-03-12 15:08:52,352 [11] INFO  NewEnergyServer-31884011 - Session: d4e0a576-e1bf-4594-beb4-b7e81100cc3c/192.168.1.161:29397
+A new session connected!
+2018-03-12 15:08:52,353 [15] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:29397>><<d4e0a576-e1bf-4594-beb4-b7e81100cc3c>> connected,session count >> 1
+2018-03-12 15:08:53,451 [13] INFO  BSP_NewEnergy_Protocol.Program - <<192.168.1.161:29397>>Received：68 18 18 68 5A 12 12 00 08 39 01 00 08 01 52 B8 7E BF 66 66 06 3F 12 03 08 13 16
+2018-03-12 15:10:10,695 [13] INFO  BSP_NewEnergy_Protocol.Program - <<192.168.1.161:29397>>Received：68 18 18 68 5A 12 12 00 08 39 01 00 08 01 EE 7C 7F BF 71 3D 0A 3F 12 03 08 16
+2018-03-12 15:10:10,697 [13] INFO  NewEnergyServer-31884011 - Session: d4e0a576-e1bf-4594-beb4-b7e81100cc3c/192.168.1.161:29397
+This session was closed for ServerClosing!
+2018-03-12 15:13:20,853 [9] INFO  NewEnergyServer-31884011 - The server instance NewEnergyServer-31884011 has been started!
+2018-03-12 15:13:40,320 [10] INFO  NewEnergyServer-31884011 - Session: 9da1267d-4ae4-4935-ac95-5f9ff21a6442/192.168.1.161:29681
+A new session connected!
+2018-03-12 15:13:40,343 [13] INFO  BSP_NewEnergy_Protocol.Program - Session：<<192.168.1.161:29681>><<9da1267d-4ae4-4935-ac95-5f9ff21a6442>> connected,session count >> 1
+2018-03-12 15:13:42,469 [13] INFO  BSP_NewEnergy_Protocol.Program - <<192.168.1.161:29681>>Received：68 18 18 68 5A 12 12 00 08 39 01 00 08 01 EE 7C 7F BF 71 3D 0A 3F 12 03 08 16

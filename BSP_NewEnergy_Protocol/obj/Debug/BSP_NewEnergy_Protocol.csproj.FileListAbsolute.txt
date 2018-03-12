@@ -33,3 +33,4 @@ D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\N
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\System.Net.Http.Formatting.xml
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\System.Web.Http.xml
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\bin\Debug\System.Web.Http.Owin.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\BSP_NewEnergy_Protocol\obj\Debug\BSP_NewEnergy_Protocol.csprojResolveAssemblyReference.cache

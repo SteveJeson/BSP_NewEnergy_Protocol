@@ -60,7 +60,7 @@ namespace BSP_NewEnergy_Protocol.Utils
                 msg[17] = 0x16;
                 String str = BitConverter.ToString(msg).Replace("-", " ");
                 //Console.WriteLine("{0} 定时任务 >> 主动下发校时：{1}", DateTime.Now, str);
-                logger.Info("定时任务 >> 主动下发校时：" + str);
+                logger.Info("<<"+code+">>timer start,send checking time info to<<"+session.RemoteEndPoint+">>：" + str);
                 session.Send(msg, 0, msg.Length);
             };
             timer.Start();
@@ -96,8 +96,8 @@ namespace BSP_NewEnergy_Protocol.Utils
             Buffer.BlockCopy(sendMsg, index, newArr, 0, len);
             sendMsg[sendMsg.Length - 2] = ExplainUtils.makeCheckSum(newArr);
             String reply = BitConverter.ToString(sendMsg).Replace("-", " ");
-            logger.Info("校时回复：" + reply);
-            Console.WriteLine("校时回复： {0}", reply);
+            logger.Info("checking time reply<<"+session.RemoteEndPoint+">>: " + reply);
+            Console.WriteLine("checking time reply<<{0}>>: {1}",session.RemoteEndPoint ,reply);
             session.Send(sendMsg, 0, sendMsg.Length);//回复客户端
         }
 
@@ -147,12 +147,12 @@ namespace BSP_NewEnergy_Protocol.Utils
             string sendMsg = BitConverter.ToString(msg).Replace("-", " ");
             if (sessions.ContainsKey(code))
             {
-                Console.WriteLine("下发汇集器配置: {0}", sendMsg);
+                Console.WriteLine("send aggregator config : {0}", sendMsg);
                 sessions[code].Send(msg, 0, msg.Length);
             } else
             {
-                Console.WriteLine("<<{0}>>会话不存在",code);
-                logger.Error("<<"+code+">>会话不存在！");
+                Console.WriteLine("<<{0}>>session cannot be found.", code);
+                logger.Error("<<" + code + ">>session cannot be found.");
             }
         }
 
@@ -184,13 +184,13 @@ namespace BSP_NewEnergy_Protocol.Utils
             if (sessions.ContainsKey(code))
             {
                 String sendMsg = BitConverter.ToString(msg).Replace("-", " ");
-                Console.WriteLine("下发初始化指令：" + sendMsg);
-                logger.Info("下发初始化指令：" + sendMsg);
+                Console.WriteLine("send init command:" + sendMsg);
+                logger.Info("send init command:" + sendMsg);
                 sessions[code].Send(msg, 0, msg.Length);
             } else
             {
-                Console.WriteLine("<<{0}>>会话不存在", code);
-                logger.Error("<<" + code + ">>会话不存在！");
+                Console.WriteLine("<<{0}>>session cannot be found.", code);
+                logger.Error("<<" + code + ">>session cannot be found.");
             }
         }
 
@@ -222,12 +222,12 @@ namespace BSP_NewEnergy_Protocol.Utils
             if (sessions.ContainsKey(code))
             {
                 String sendMsg = BitConverter.ToString(msg).Replace("-", " ");
-                Console.WriteLine("下发重启指令：" + sendMsg);
+                Console.WriteLine("send restart command:" + sendMsg);
                 sessions[code].Send(msg, 0, msg.Length);
             } else
             {
-                Console.WriteLine("<<{0}>>会话不存在", code);
-                logger.Error("<<" + code + ">>会话不存在！");
+                Console.WriteLine("<<{0}>>session cannot be found.", code);
+                logger.Error("<<" + code + ">>session cannot be found.");
             }
         }
 
@@ -266,12 +266,12 @@ namespace BSP_NewEnergy_Protocol.Utils
             if (sessions.ContainsKey(code))
             {
                 String sendMsg = BitConverter.ToString(msg).Replace("-", " ");
-                Console.WriteLine("下发采集频率指令：" + sendMsg);
+                Console.WriteLine("send collection frequency command：" + sendMsg);
                 sessions[code].Send(msg, 0, msg.Length);
             } else
             {
-                Console.WriteLine("<<{0}>>会话不存在", code);
-                logger.Error("<<" + code + ">>会话不存在！");
+                Console.WriteLine("<<{0}>>session cannot be found.", code);
+                logger.Error("<<" + code + ">>session cannot be found.");
             }
 
         }
@@ -332,23 +332,31 @@ namespace BSP_NewEnergy_Protocol.Utils
         /// <param name="msg"></param>
         public static void ParseInclinometerMsg(byte[] msg)
         {
-            string code = msg[5].ToString("X2") + msg[6].ToString("X2") + msg[7].ToString("X2") + msg[8].ToString("X2");
-            string serialPort = msg[10].ToString("X2");
-            string address = msg[11].ToString("X2") + msg[12].ToString("X2");
-            string producer = msg[13].ToString("X2");
-            byte[] newArr = new byte[] { msg[14], msg[15], msg[16], msg[17] };
-            float x = BitConverter.ToSingle(newArr,0);
-            newArr[0] = msg[18];
-            newArr[1] = msg[19];
-            newArr[2] = msg[20];
-            newArr[3] = msg[21];
-            float y = BitConverter.ToSingle(newArr,0);
-            string time = ExplainUtils.oneByteToInteger(msg[22]).ToString().PadLeft(2,'0') + ExplainUtils.oneByteToInteger(msg[23]).ToString().PadLeft(2, '0')
-                + ExplainUtils.oneByteToInteger(msg[24]).ToString().PadLeft(2, '0') + ExplainUtils.oneByteToInteger(msg[25]).ToString().PadLeft(2, '0')
-                + ExplainUtils.oneByteToInteger(msg[26]).ToString().PadLeft(2, '0') + ExplainUtils.oneByteToInteger(msg[27]).ToString().PadLeft(2, '0');//时标
+            try
+            {
+                string code = msg[5].ToString("X2") + msg[6].ToString("X2") + msg[7].ToString("X2") + msg[8].ToString("X2");
+                string serialPort = msg[10].ToString("X2");
+                string address = msg[11].ToString("X2") + msg[12].ToString("X2");
+                string producer = msg[13].ToString("X2");
+                byte[] newArr = new byte[] { msg[14], msg[15], msg[16], msg[17] };
+                float x = BitConverter.ToSingle(newArr, 0);
+                newArr[0] = msg[18];
+                newArr[1] = msg[19];
+                newArr[2] = msg[20];
+                newArr[3] = msg[21];
+                float y = BitConverter.ToSingle(newArr, 0);
+                string time = ExplainUtils.oneByteToInteger(msg[22]).ToString().PadLeft(2, '0') + ExplainUtils.oneByteToInteger(msg[23]).ToString().PadLeft(2, '0')
+                    + ExplainUtils.oneByteToInteger(msg[24]).ToString().PadLeft(2, '0') + ExplainUtils.oneByteToInteger(msg[25]).ToString().PadLeft(2, '0')
+                    + ExplainUtils.oneByteToInteger(msg[26]).ToString().PadLeft(2, '0') + ExplainUtils.oneByteToInteger(msg[27]).ToString().PadLeft(2, '0');//时标
 
-            Console.WriteLine("地址码：{0}，串口号：{1}，采集地址：{2}，厂家：{3}，x坐标：{4}，y坐标：{5}，时标：{6}", code, serialPort, address, producer, x, y, time);
-            logger.Info("解析倾角仪上报数据 >> 地址码："+code+"，串口号："+serialPort+"，采集地址："+address+"，厂家："+producer+"，x坐标："+x+"，y坐标："+y+"，时标："+time);
+                Console.WriteLine("code：{0}，serialPort：{1}，address：{2}，producer：{3}，X：{4}，Y：{5}，timestamp：{6}", code, serialPort, address, producer, x, y, time);
+                logger.Info("parse inclinometer data >> code：" + code + "，serialPort：" + serialPort + "，address：" + address + "，producer：" + producer + "，X：" + x + "，Y：" + y + "，timestamp：" + time);
+            }
+            catch (Exception e)
+            {
+                logger.Error("<<Method-ParseInclinometerMsg>>"+e.GetType()+":"+e.Message);
+            }
+            
         }
         /// <summary>
         /// 解析采集频率时间
@@ -369,11 +377,6 @@ namespace BSP_NewEnergy_Protocol.Utils
             resultArr[0] = ExplainUtils.makeCheckSum(sumArr);
             resultArr[1] = ExplainUtils.makeCheckSum(sumArr2);
             return resultArr;
-        }
-
-        public static int Sum(int a, int b)
-        {
-            return a + b;
         }
     }
 }

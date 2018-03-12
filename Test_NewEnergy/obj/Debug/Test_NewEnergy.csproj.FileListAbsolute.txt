@@ -16,3 +16,16 @@ D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\obj\Debug\Test_NewE
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\obj\Debug\Test_NewEnergy.dll
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\obj\Debug\Test_NewEnergy.pdb
 D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Test_NewEnergy.dll.config
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Owin.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\System.Web.Http.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\System.Web.Http.Owin.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\System.Net.Http.Formatting.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Newtonsoft.Json.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Microsoft.Owin.dll
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\System.Web.Http.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\System.Web.Http.Owin.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\System.Net.Http.Formatting.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Newtonsoft.Json.xml
+D:\vsworkspace\console\BSP_NewEnergy_Protocol\Test_NewEnergy\bin\Debug\Microsoft.Owin.xml

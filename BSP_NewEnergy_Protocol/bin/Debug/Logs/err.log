@@ -1,4 +1,1 @@
-﻿2018-03-08 15:21:31,943 [10] ERROR BSP_NewEnergy_Protocol.Utils.MsgHandler - <<12120008>>会话不存在！
-2018-03-08 15:24:30,465 [10] ERROR BSP_NewEnergy_Protocol.Utils.MsgHandler - <<12120008>>会话不存在！
-2018-03-08 15:49:17,075 [10] ERROR BSP_NewEnergy_Protocol.Controllers.BspController - <<Method-SendConfigurationInfo>>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException:无法对 null 引用执行运行时绑定
-2018-03-08 15:49:34,050 [10] ERROR BSP_NewEnergy_Protocol.Utils.MsgHandler - <<12120008>>会话不存在！
+﻿2018-03-12 11:29:22,533 [6] ERROR BSP_NewEnergy_Protocol.SuperSocket.NewEnergySession - <<System.IndexOutOfRangeException>>索引超出了数组界限。

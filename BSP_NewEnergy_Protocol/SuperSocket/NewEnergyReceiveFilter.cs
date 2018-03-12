@@ -1,6 +1,7 @@
 ﻿using SuperSocket.Facility.Protocol;
 using SuperSocket.SocketBase;
 using BSP_NewEnergy_Protocol.Model;
+using BSP_NewEnergy_Protocol.Utils;
 
 namespace BSP_NewEnergy_Protocol.SuperSocket
 {
@@ -23,6 +24,14 @@ namespace BSP_NewEnergy_Protocol.SuperSocket
             {
                 all = all + readBuffer[offset + i].ToString("X2") + " ";
             }
+
+            //转义还原
+            //byte[] message = ExplainUtils.DoEscape4Receive(readBuffer, offset, offset + length);
+            //string all2 = "";
+            //for (int i = 0; i < message.Length; i++)
+            //{
+            //    all2 = all2 + message[i].ToString("X2") + " ";
+            //}
 
             NewEnergyProtocol protocol = new NewEnergyProtocol();
             protocol.all = all;

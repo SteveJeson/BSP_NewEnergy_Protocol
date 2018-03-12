@@ -31,26 +31,35 @@ namespace BSP_NewEnergy_Protocol
         static void protocolServer_NewRequestReceived(NewEnergySession session, NewEnergyRequestInfo requestInfo)
         {
             bool checkTimeDone = false;
-            bool needReply = true;
             byte[] sendMsg = ExplainUtils.HexSpaceStringToByteArray(requestInfo.Body.all);
             String content = BitConverter.ToString(sendMsg).Replace("-", " ");
-            Console.WriteLine("Received == "+content);
-            logger.Info("Received："+content);
+            Console.WriteLine("<<{0}>>Received == {1}",session.RemoteEndPoint,content);
+            logger.Info("<<"+session.RemoteEndPoint+">>Received："+content);
             //68 31 00 31 00 68 C9 12 12 08 00 00 02 70 00 00 01 00 68 16
-            int index = Array.IndexOf(sendMsg, (byte)0xC9);
-            int typeIndex; string code; int codeIndex;
-            if (index == -1)
+            int index = ExplainUtils.GetSecondIndexFromByteArr(sendMsg,(byte)0x68);//第二个68的索引
+            int indexOfControl = index + 1;//控制字的索引
+            int typeIndex;//帧类型索引
+            string code;//地址码
+            int codeIndex;//地址码索引
+            int len;//要校验的长度：有C9控制字则从C9开始，否则从第二个68开始到校验和前一位
+            int checkIndex;//校验的起始位
+            if (sendMsg[indexOfControl] == 0xC9)
             {
-                index = Array.LastIndexOf(sendMsg,(byte)0x68);//todo 第二个68不一定是最后一个68，可能有三个及以上68，待补
-                typeIndex = index + 6;//没有C9控制字的帧类型索引在第二个68索引后第6位
-                codeIndex = index + 2;
-                code = sendMsg[codeIndex].ToString("X2") + sendMsg[codeIndex + 1].ToString("X2") + sendMsg[codeIndex + 2].ToString("X2") + sendMsg[codeIndex + 3].ToString("X2");
+                typeIndex = indexOfControl + 5;
+                codeIndex = indexOfControl + 1;
+                //有C9控制字的地址码高低位互换
+                code = sendMsg[codeIndex + 1].ToString("X2") + sendMsg[codeIndex].ToString("X2") 
+                    + sendMsg[codeIndex + 3].ToString("X2") + sendMsg[codeIndex + 2].ToString("X2");
+                len = sendMsg.Length - 2 - indexOfControl;
+                checkIndex = indexOfControl;
             } else
             {
-                typeIndex = index + 5;//帧类型索引,有C9控制字的帧类型索引在控制字索引后第5位
-                codeIndex = index + 1;
-                //有C9控制字的地址码高低位互换
-                code = sendMsg[codeIndex + 1].ToString("X2") + sendMsg[codeIndex].ToString("X2") + sendMsg[codeIndex + 3].ToString("X2") +  sendMsg[codeIndex + 2].ToString("X2") ;
+                typeIndex = index + 6;
+                codeIndex = index + 2;
+                code = code = sendMsg[codeIndex].ToString("X2") + sendMsg[codeIndex + 1].ToString("X2")
+                    + sendMsg[codeIndex + 2].ToString("X2") + sendMsg[codeIndex + 3].ToString("X2");
+                len = sendMsg.Length - 2 - index;
+                checkIndex = index;
             }
             
             var sessions = MsgHandler.sessions;
@@ -60,16 +69,17 @@ namespace BSP_NewEnergy_Protocol
             }
             else
             {
+                sessions[code].Close();
                 sessions[code] = session;
             }
             byte type = sendMsg[typeIndex];//帧类型
             if (type == 0x00)//登录、心跳、失电
             {
                 string markCode = sendMsg[sendMsg.Length - 4].ToString("X2") + sendMsg[sendMsg.Length - 3].ToString("X2");
-                string markName = "未知帧";
+                string markName = "unknown frame";
                 if ("0100".Equals(markCode))
                 {
-                    markName = "登录帧";
+                    markName = "login";
                     if (!checkTimeDone)
                     {
                         MsgHandler.SendCheckTimerInfo(session, code);
@@ -77,41 +87,25 @@ namespace BSP_NewEnergy_Protocol
                     
                 } else if ("0400".Equals(markCode))
                 {
-                    markName = "心跳帧";
+                    markName = "heartbeat";
                 } else if ("0010".Equals(markCode))
                 {
-                    markName = "失电帧";
+                    markName = "power-lossing";
                 }
-                if (index != -1)
-                {
-                    sendMsg[index] = 0x00;
-                    sendMsg[index + 6] = 0x00;
-                } else
-                {
-                    index = Array.LastIndexOf(sendMsg, (byte)0x68);//todo 第二个68不一定是最后一个68，可能有三个及以上68，待补
-                    //todo
-                    if (index != -1)
-                    {
-                        sendMsg[index + 1] = 0x00;
-                        sendMsg[index + 7] = 0x00;
-                    } else
-                    {
-                        logger.Info("非法协议 == "+content);
-                    }
-                }
-                int len = sendMsg.Length - 2 - index;//从C9或者第二个68开始到校验和前一位长度
+                sendMsg[indexOfControl] = 0x00;
+                sendMsg[indexOfControl + 6] = 0x00;
                 byte[] newArr = new byte[len];
-                Buffer.BlockCopy(sendMsg, index, newArr, 0, len);
+                Buffer.BlockCopy(sendMsg, checkIndex, newArr, 0, len);
                 sendMsg[sendMsg.Length - 2] = ExplainUtils.makeCheckSum(newArr);//计算校验码
 
                 String reply = BitConverter.ToString(sendMsg).Replace("-", " ");
-                Console.WriteLine("{0}下行：{1}",markName, reply);
-                logger.Info(markName + "下行: " + reply);
+                Console.WriteLine("{0} reply：{1}",markName, reply);
+                logger.Info(markName + " reply: " + reply);
                 session.Send(sendMsg, 0, sendMsg.Length);//回复客户端
             }
             else if (type == 0x09)//校时
             {
-                byte controlCode = sendMsg[index+1];
+                byte controlCode = sendMsg[indexOfControl];
                 if (controlCode == 0xDC)//校时成功
                 {
                     checkTimeDone = true;
@@ -122,44 +116,38 @@ namespace BSP_NewEnergy_Protocol
                         timer.Stop();
                         MsgHandler.timers.TryRemove(code, out timer);
                     }
-                    Console.WriteLine("<<{0}>><<{1}>>校时成功，停止定时任务.",code,session.SessionID);
-                    logger.Info("<<"+code+">><<"+session.SessionID+">>校时成功，停止定时任务.");
+                    Console.WriteLine("<<{0}>><<{1}>>check time done,sotpped the timer.",code,session.RemoteEndPoint);
+                    logger.Info("<<"+code+">><<"+session.RemoteEndPoint+ ">>check time done,sotpped the timer.");
                 }
                 else//校时回复
                 {
-                    MsgHandler.SendCheckTimerInfo(sendMsg, session, typeIndex, index);
+                    MsgHandler.SendCheckTimerInfo(sendMsg, session, typeIndex, checkIndex);
                 }
-                needReply = false;
             } else if (type == 0x01)//采集频率回复
             {
                 //MsgHandler.SendFrequencyForCollection();//测试
-                Console.WriteLine("采集频率设置成功，回复确认！");
-                logger.Info("采集频率设置成功，回复确认！");
+                Console.WriteLine("reply from client<<"+session.RemoteEndPoint+">> : set collection frequency done.");
+                logger.Info("reply from client<<" + session.RemoteEndPoint + ">> : set collection frequency done.");
             } else if (type == 0x03)//初始化成功
             {
-                Console.WriteLine("初始化成功，回复平台确认！");
-                logger.Info("初始化成功，回复平台确认！");
-                needReply = false;
+                Console.WriteLine("reply from client<<"+session.RemoteEndPoint+">> : init done.");
+                logger.Info("reply from client<<" + session.RemoteEndPoint + ">> : init done.");
             } else if (type == 0x04)//重启成功
             {
-                Console.WriteLine("重启成功，回复平台确认！");
-                logger.Info("重启成功，回复平台确认！");
-                needReply = false;
+                Console.WriteLine("reply from client<<" + session.RemoteEndPoint + ">> : restart done.");
+                logger.Info("reply from client<<" + session.RemoteEndPoint + ">> : restart done.");
             }else if (type == 0x52)//下发倾角仪回复
             {
-                Console.WriteLine("下发倾角仪成功，回复确认！");
-                logger.Info("下发倾角仪成功，回复确认！");
-                needReply = false;
+                Console.WriteLine("reply from client<<" + session.RemoteEndPoint + ">> : received inclinometer configuration.");
+                logger.Info("reply from client<<" + session.RemoteEndPoint + ">> : received inclinometer configuration.");
             } else if (type == 0x53)//取消倾角仪回复
             {
                 //同下发，只是帧类型不同
-                Console.WriteLine("取消倾角仪成功，回复确认！");
-                logger.Info("取消倾角仪成功，回复确认！");
-                needReply = false;
+                Console.WriteLine("reply from client<<" + session.RemoteEndPoint + ">> : cancelled inclinometer.");
+                logger.Info("reply from client<<" + session.RemoteEndPoint + ">> : cancelled inclinometer.");
             } else if (type == 0x39)//倾角仪数据上报
             {
                 MsgHandler.ParseInclinometerMsg(sendMsg);
-                needReply = false;
             } else if (type == 0x15)//倾角数据采集无响应
             {
                 //68 0A 0A 68 5B 12 12 00 08 15 02 01 01 D4 DC 16
@@ -167,42 +155,34 @@ namespace BSP_NewEnergy_Protocol
                 byte controlCode = sendMsg[4];
                 byte[] arr = new byte[] { controlCode, 0x80 };
                 sendMsg[4] = ExplainUtils.makeCheckSum(arr);
-                int len = sendMsg.Length - 2 - index;
                 byte[] newArr = new byte[len];
-                Buffer.BlockCopy(sendMsg, index, newArr, 0, len);
+                Buffer.BlockCopy(sendMsg, checkIndex, newArr, 0, len);
                 sendMsg[14] = ExplainUtils.makeCheckSum(newArr);
                 String reply = BitConverter.ToString(sendMsg).Replace("-", " ");
-                logger.Info("倾角数据采集无响应下行：" + reply);
-                Console.WriteLine("倾角数据采集无响应下行：{0}", reply);
+                Console.WriteLine("reply from client<<" + session.RemoteEndPoint + ">> : no response from inclinometer >> reply:"+reply);
+                logger.Info("reply from client<<"+session.RemoteEndPoint+">> : no response from inclinometer >> reply:"+reply);
                 session.Send(sendMsg, 0, sendMsg.Length);//回复客户端
             }
-            //if (needReply)
-            //{
-            //    String reply = BitConverter.ToString(sendMsg).Replace("-", " ");
-            //    session.Logger.Info("reply to client == " + reply);
-            //    Console.WriteLine("reply to client == {0}", reply);
-            //    session.Send(sendMsg, 0, sendMsg.Length);//回复客户端
-            //}
         }
 
-        
-
         /// <summary>
-        /// 回话关闭事件
+        /// 会话关闭事件
         /// </summary>
         /// <param name="session"></param>
         /// <param name="reason"></param>
         static void protocolServer_SessionClosed(NewEnergySession session, CloseReason reason)
         {
+            Console.WriteLine("Client <<{0}>><<{1}>> disconnected,Online session >> {2},Reason:{3}", session.RemoteEndPoint, session.SessionID, appServer.SessionCount, reason);
             logger.Warn("Client【" + session.RemoteEndPoint + "】disconnected == Num：" + appServer.SessionCount.ToString() + ",Reason：" + reason.GetType()+" "+reason.ToString());
-            Console.WriteLine("Client <<{0}>><<{1}>> disconnected,Online session >> {2},Reason:{3}",session.RemoteEndPoint,session.SessionID,appServer.SessionCount,reason);
             session.Close();
         }
 
+        /// <summary>
+        /// 启动web api服务
+        /// </summary>
         private static void StartWebApiService()
         {
             string baseAddress = ConfigurationManager.AppSettings["baseAddress"];
-            //string baseAddress = "http://+:8080/"; //绑定所有地址，外网可以用ip访问 需管理员权限
             // 启动 OWIN host 
             WebApp.Start<Startup>(url: baseAddress);
             Console.WriteLine("Web API listening at {0}",baseAddress);

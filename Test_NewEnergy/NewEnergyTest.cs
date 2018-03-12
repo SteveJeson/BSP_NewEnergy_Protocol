@@ -74,13 +74,22 @@ namespace Test_NewEnergy
             Assert.AreEqual(arr[1],0xA7);
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void TestParseIntFromBytes()
         {
             byte[] arr = new byte[] { 0x42, 0x9A, 0x38, 0x5F};
             int bcd = ExplainUtils.ParseIntFromBytes(arr,0,arr.Length);
             Console.WriteLine(bcd);
             Assert.AreEqual(4,arr.Length);
+        }
+
+        [TestMethod]
+        public void TestGetIndexFromByteArr()
+        {
+            string str = "68 18 18 66 5A 12 12 00 08 68 01 00 08 01 77 BE 7F BF A6 9B 04 3F 12 03 68 11 1A 27 97 16";
+            byte[] arr = ExplainUtils.HexSpaceStringToByteArray(str);
+            int index = ExplainUtils.GetSecondIndexFromByteArr(arr, 0x68);
+            Assert.AreEqual(index,9);
         }
     }
 }

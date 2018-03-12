@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -682,5 +684,23 @@ namespace BSP_NewEnergy_Protocol.Utils
             return strArr;
         }
 
+        /// <summary>
+        /// 查找byte数组中指定元素的第二次出现的位置索引
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="dest"></param>
+        /// <returns></returns>
+        public static int GetSecondIndexFromByteArr(byte[] arr,byte dest)
+        {
+            for (int i = Array.IndexOf(arr,dest)+1; i <= Array.LastIndexOf(arr,dest); i++)
+            {
+                byte val = arr[i];
+                if (dest == val)
+                {
+                    return i;
+                }
+            }
+            return Array.IndexOf(arr,dest);
+        }
     }
 }

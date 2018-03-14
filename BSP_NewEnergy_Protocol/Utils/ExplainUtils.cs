@@ -281,10 +281,24 @@ namespace BSP_NewEnergy_Protocol.Utils
                 }
                 for (int i = start; i < end; i++)
                 {
-                    if (bs[i] == 0x7e)
+                    if (bs[i] == 0x68)
                     {
-                        ms.WriteByte(0x7d);
+                        ms.WriteByte(0x67);
                         ms.WriteByte(0x02);
+                    } else if (bs[i] == 0x16)
+                    {
+                        ms.WriteByte(0x15);
+                        ms.WriteByte(0x02);
+                    }
+                    else if (bs[i] == 0x67)
+                    {
+                        ms.WriteByte(0x67);
+                        ms.WriteByte(0x01);
+                    }
+                    else if (bs[i] == 0x15)
+                    {
+                        ms.WriteByte(0x15);
+                        ms.WriteByte(0x01);
                     }
                     else
                     {
@@ -328,14 +342,24 @@ namespace BSP_NewEnergy_Protocol.Utils
                 MemoryStream ms = new MemoryStream();
                 for (int i = start; i < end; i++)
                 {
-                    if (bs[i] == 0x7d && bs[i + 1] == 0x01)
+                    if (bs[i] == 0x67 && bs[i + 1] == 0x01)
                     {
-                        ms.WriteByte(0x7d);
+                        ms.WriteByte(0x67);
                         i++;
                     }
-                    else if (bs[i] == 0x7d && bs[i + 1] == 0x02)
+                    else if (bs[i] == 0x67 && bs[i + 1] == 0x02)
                     {
-                        ms.WriteByte(0x7e);
+                        ms.WriteByte(0x68);
+                        i++;
+                    }
+                    else if (bs[i] == 0x15 && bs[i + 1] == 0x01)
+                    {
+                        ms.WriteByte(0x15);
+                        i++;
+                    }
+                    else if (bs[i] == 0x15 && bs[i + 1] == 0x02)
+                    {
+                        ms.WriteByte(0x16);
                         i++;
                     }
                     else

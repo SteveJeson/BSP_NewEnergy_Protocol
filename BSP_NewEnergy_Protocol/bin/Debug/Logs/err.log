@@ -1,5 +1,0 @@
-﻿2018-03-12 11:29:22,533 [6] ERROR BSP_NewEnergy_Protocol.SuperSocket.NewEnergySession - <<System.IndexOutOfRangeException>>索引超出了数组界限。
-2018-03-12 15:08:44,140 [13] ERROR BSP_NewEnergy_Protocol.Utils.MsgHandler - <<Method-ParseInclinometerMsg>>System.IndexOutOfRangeException:索引超出了数组界限。
-2018-03-12 15:08:53,515 [13] ERROR BSP_NewEnergy_Protocol.Utils.MsgHandler - <<Method-ParseInclinometerMsg>>System.IndexOutOfRangeException:索引超出了数组界限。
-2018-03-12 15:10:10,838 [13] ERROR BSP_NewEnergy_Protocol.Utils.MsgHandler - <<Method-ParseInclinometerMsg>>System.IndexOutOfRangeException:索引超出了数组界限。
-2018-03-12 15:13:42,508 [13] ERROR BSP_NewEnergy_Protocol.Utils.MsgHandler - <<Method-ParseInclinometerMsg>>索引超出了数组界限。Data:68 18 18 68 5A 12 12 00 08 39 01 00 08 01 EE 7C 7F BF 71 3D 0A 3F 12 03 08 16
